@@ -1,0 +1,76 @@
+site_name: AI Engineering Handbook
+site_description: A practical guide to LLMs, RAG, AI Agents, and Production AI Systems
+site_author: Your Name
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+nav:
+  - Home: index.md
+
+  - LLM Fundamentals:
+      - Transformer: fundamentals/transformer.md
+      - Self Attention: fundamentals/self-attention.md
+      - Tokenization: fundamentals/tokenization.md
+      - Embeddings: fundamentals/embeddings.md
+      - Inference: fundamentals/inference.md
+      - KV Cache: fundamentals/kv-cache.md
+
+  - RAG:
+      - Introduction: rag/introduction.md
+      - Chunking: rag/chunking.md
+      - Vector DB: rag/vector-database.md
+      - Retrieval: rag/retrieval.md
+      - Evaluation: rag/evaluation.md
+
+  - AI Agents:
+      - ReAct: agents/react.md
+      - Reflection: agents/reflection.md
+      - Plan & Execute: agents/plan-and-execute.md
+      - Multi-Agent: agents/multi-agent.md
+      - LangGraph: agents/langgraph.md
+
+  - Production AI:
+      - Prompt Engineering: production/prompt-engineering.md
+      - Tool Calling: production/tool-calling.md
+      - Quantization: production/quantization.md
+      - Monitoring: production/monitoring.md
+
+  - System Design:
+      - RAG System: system-design/rag-system.md
+      - AI Assistant: system-design/ai-assistant.md
+
+  - Interview Prep:
+      - Questions: interview/questions.md
